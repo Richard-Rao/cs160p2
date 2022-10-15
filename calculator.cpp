@@ -283,7 +283,7 @@ size_t Parser::AdditiveExpression() {
 }
 
 size_t Parser::AEHelper(size_t t) {
-  size_t result = 0;
+  size_t result = t;
   size_t nextTerm = 0;
   switch (FilterTokens(scanner)){
     case T_ADD:
